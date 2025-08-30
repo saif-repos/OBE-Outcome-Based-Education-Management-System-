@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/course_item_background"
+    android:elevation="6dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Top Row: Course Name and Section -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Course Name -->
+        <TextView
+            android:id="@+id/courseName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Course Name"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Section (Below Course Name) -->
+        <TextView
+            android:id="@+id/courseSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseName"
+            android:layout_marginTop="4dp"
+            android:text="1A"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <!-- Dropdown Icon (Right Side) -->
+        <ImageView
+            android:id="@+id/dropdownIcon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_dropdown" />
+    </RelativeLayout>
+
+    <!-- Expandable Layout for CLO, Mappings, etc. -->
+    <LinearLayout
+        android:id="@+id/expandableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <!-- CLO Option -->
+        <TextView
+            android:id="@+id/cloOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:text="> CLO"
+            android:textSize="16sp" />
+
+        <!-- Mapping Between CLO to PLO -->
+        <TextView
+            android:id="@+id/cloToPloOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:text="> Mapping Between CLO to PLO"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/closToActivitiesOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:text="> Mapping Between CLOs to Activity"
+            android:textSize="16sp" />
+
+        <!-- Mapping Between CLOs to Tasks -->
+        <TextView
+            android:id="@+id/closToTasksOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:text="> Mapping Between CLOs to TASKS"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/creationOfTaskOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:text="> Creation of Tasks"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/MarksDistributionOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:text="> Marks Distribution"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/MarkSheetOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:text="> Mark Sheet"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/FCR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
+            android:text="> FCR"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

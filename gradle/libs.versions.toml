@@ -1,0 +1,63 @@
+[versions]
+agp = "8.6.0"
+androidxRecyclerview = "1.3.1"
+appcompatVersion = "1.6.1"
+comGoogleAndroidMaterialMaterial = "1.9.0"
+fragmentKtx = "1.8.6"
+fragmentKtxVersion = "1.6.2"
+googleMaterial = "1.11.0"
+googleMaterialVersion = "1.6.0"
+gradle = "8.2.2"
+itextg = "5.5.10"
+kotlin = "1.9.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.0"
+constraintlayout = "2.2.0"
+materialVersion = "1.8.0"
+retrofit = "2.11.0"
+viewpager2 = "1.1.0"
+navigationFragmentKtx = "2.8.9"
+navigationUiKtx = "2.8.9"
+recyclerview = "1.4.0"
+tracingPerfettoHandshake = "1.0.0"
+datastoreCoreAndroid = "1.1.3"
+datastoreCoreJvm = "1.1.3"
+
+[libraries]
+androidx-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-fragment-ktx = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtx" }
+androidx-fragment-ktx-v162 = { module = "androidx.fragment:fragment-ktx", version.ref = "fragmentKtxVersion" }
+androidx-recyclerview-v131 = { module = "androidx.recyclerview:recyclerview", version.ref = "androidxRecyclerview" }
+androidx-viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+com-google-android-material-material-v190-x2 = { module = "com.google.android.material:material", version.ref = "comGoogleAndroidMaterialMaterial" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "gradle" }
+itextg = { module = "com.itextpdf:itextg", version.ref = "itextg" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+material-v1110 = { module = "com.google.android.material:material", version.ref = "googleMaterial" }
+material-v160 = { module = "com.google.android.material:material", version.ref = "googleMaterialVersion" }
+material-v180 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+androidx-tracing-perfetto-handshake = { group = "androidx.tracing", name = "tracing-perfetto-handshake", version.ref = "tracingPerfettoHandshake" }
+androidx-datastore-core-android = { group = "androidx.datastore", name = "datastore-core-android", version.ref = "datastoreCoreAndroid" }
+androidx-datastore-core-jvm = { group = "androidx.datastore", name = "datastore-core-jvm", version.ref = "datastoreCoreJvm" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+

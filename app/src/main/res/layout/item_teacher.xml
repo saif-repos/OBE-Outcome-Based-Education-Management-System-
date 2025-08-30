@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Teacher Name -->
+    <TextView
+        android:id="@+id/teacherName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Teacher Name"
+        android:textSize="16sp" />
+
+    <!-- Semester and Section -->
+    <TextView
+        android:id="@+id/semesterSection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="1A"
+        android:textSize="16sp" />
+
+    <!-- Radio Button for Assigned Teacher -->
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assigned"
+        android:enabled="false" />
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ACTIVITIES.HOD_DASHBOARD">
+
+    <!-- Top Bar (Back Icon, HOD Name, Plus Icon) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Back Icon (Top Left) -->
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_back" />
+
+        <!-- HOD Name (Centered) -->
+        <TextView
+            android:id="@+id/textViewHODName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="HOD_NAME"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Container for Plus Icon and Add Program Text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Plus Icon (Top Right) -->
+
+            <!-- Add Program Text (Exactly Below the Plus Icon) -->
+            <ImageView
+                android:id="@+id/addIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="Add Program"
+                android:src="@drawable/baseline_add_24" />
+
+            <TextView
+                android:id="@+id/addProgramText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Add Program"
+                android:textColor="#808080"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <!-- Programs Name TextView (Centered) -->
+    <TextView
+        android:id="@+id/programsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Programs"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <!-- ListView for Programs -->
+    <ListView
+        android:id="@+id/programsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+
+</LinearLayout>

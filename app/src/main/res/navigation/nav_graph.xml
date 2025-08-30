@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentCourses">
+
+    <!-- Courses Fragment -->
+    <fragment
+        android:id="@+id/fragmentCourses"
+        android:name="com.example.obe_mngt_sys.ACTIVITIES.FragmentCourses"
+        android:label="Courses"
+        tools:layout="@layout/fragment_courses">
+        <action
+            android:id="@+id/action_to_PLOs"
+            app:destination="@id/fragmentPLOs" />
+    </fragment>
+
+    <!-- PLOs Fragment -->
+    <fragment
+        android:id="@+id/fragmentPLOs"
+        android:name="com.example.obe_mngt_sys.ACTIVITIES.FragmentPLOs"
+        android:label="PLOs"
+        tools:layout="@layout/fragment__plos" />
+
+    <!-- Mapping Fragment -->
+    <fragment
+        android:id="@+id/fragmentMapping"
+        android:name="com.example.obe_mngt_sys.ACTIVITIES.FragmentMapping"
+        android:label="Mapping"
+        tools:layout="@layout/fragment__mapping" />
+
+    <!-- Course Allocation Fragment -->
+    <fragment
+        android:id="@+id/fragmentCourseAllocation"
+        android:name="com.example.obe_mngt_sys.ACTIVITIES.FragmentCourseAllocation"
+        android:label="Course Allocation"
+        tools:layout="@layout/fragment__course_allocation" />
+</navigation>

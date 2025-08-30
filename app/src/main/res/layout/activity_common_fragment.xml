@@ -1,0 +1,87 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ACTIVITIES.CommonFragment">
+
+    <!-- Top Bar (Back Icon, Teacher Name, Suggestion Icon) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Back Icon (Top Left) -->
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_back" />
+
+        <!-- Teacher Name (Centered) -->
+        <TextView
+            android:id="@+id/textViewTeacherName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TEACHER_NAME"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Container for Suggestion Icon and Text -->
+        <LinearLayout
+            android:id="@+id/suggestionContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <!-- Suggestion Icon (Top Right) -->
+            <ImageView
+                android:id="@+id/bellIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:contentDescription="Suggestion"
+                android:src="@drawable/ic_bell" />
+
+            <!-- Suggestion Text (Below the Icon) -->
+            <TextView
+                android:id="@+id/addCourseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SUGGESTIONS"
+                android:textColor="#808080"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <!-- Notification Badge for Bell Icon -->
+        <TextView
+            android:id="@+id/bellCountText"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@id/suggestionContainer"
+            android:layout_alignTop="@id/suggestionContainer"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/notification_badge"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- Fragment Container -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

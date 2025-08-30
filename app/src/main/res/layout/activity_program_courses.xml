@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ACTIVITIES.Program_courses">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#D3D3D3"
+        android:titleTextColor="#000000"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Back Icon -->
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_back" />
+
+        <!-- HOD Name -->
+        <TextView
+            android:id="@+id/textViewHODName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="HOD_NAME"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Bell Icon with Notification Badge and Label -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Frame for icon and badge -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <!-- Bell Icon -->
+                <ImageView
+                    android:id="@+id/addIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="35dp"
+                    android:contentDescription="Mapping"
+                    android:src="@drawable/ic_bell" />
+
+                <!-- Notification Count Badge -->
+                <TextView
+                    android:id="@+id/notificationBell"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="end|top"
+                    android:background="@drawable/badge_background"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="0"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone"
+                    android:elevation="5dp"/>
+
+            </FrameLayout>
+
+            <!-- Label below bell -->
+            <TextView
+                android:id="@+id/addProgramText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Mapping for\n Approvals"
+                android:textColor="#808080"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Program Name -->
+    <TextView
+        android:id="@+id/programName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Program"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <!-- Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/light_gray">
+
+        <Button
+            android:id="@+id/btnCourses"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/Aqua"
+            android:text="Courses"
+            android:textColor="#1A237E"
+            android:textSize="8sp"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btnPLOS"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/Aqua"
+            android:text="PLOS"
+            android:textColor="#1A237E"
+            android:textSize="8sp"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btnMapping"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/Aqua"
+            android:text="Mapping of\nPLOs AND Courses"
+            android:textColor="#1A237E"
+            android:textSize="8sp"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/btnCourseAllocation"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@color/Aqua"
+            android:text="Courses\nAllocation"
+            android:textColor="#1A237E"
+            android:textSize="8sp"
+            tools:ignore="TextSizeCheck" />
+    </LinearLayout>
+
+    <!-- Fragment Container -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:name="com.example.obe_mngt_sys.ACTIVITIES.FragmentCourses"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

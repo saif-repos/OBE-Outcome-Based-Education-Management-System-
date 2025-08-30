@@ -1,0 +1,137 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ACTIVITIES.TEACHER_DASHBOARD">
+
+    <!-- Top Bar (Back Icon, Teacher Name, Plus Icon) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Back Icon (Top Left) -->
+        <ImageView
+            android:id="@+id/backIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Back"
+            android:src="@drawable/ic_back" />
+
+        <!-- Teacher Name (Centered) -->
+        <TextView
+            android:id="@+id/textViewTeacherName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="TEACHER_NAME"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Container for Plus Icon and Add Course Text -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <!-- Plus Icon (Top Right) -->
+            <ImageView
+                android:id="@+id/bellIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:contentDescription="Add Course"
+                android:src="@drawable/ic_bell" />
+
+            <!-- Add Course Text (Exactly Below the Plus Icon) -->
+            <TextView
+                android:id="@+id/addCourseText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="SUGGESTIONS"
+                android:textColor="#808080"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Role Switch Toggle -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch Role:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"/>
+
+        <Switch
+            android:id="@+id/roleSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher/Advisor"
+            android:textColor="@color/black"
+            android:thumbTint="@color/Aqua"
+            android:trackTint="@android:color/darker_gray"
+            android:checked="true"/>
+    </LinearLayout>
+
+    <!-- Session/Year Filter -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filter:"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginEnd="8dp"/>
+
+        <Spinner
+            android:id="@+id/sessionSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <!-- Courses Name TextView (Centered) -->
+    <TextView
+        android:id="@+id/coursesName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Courses"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <!-- RecyclerView for Courses -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/courseRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:scrollbars="vertical" />
+</LinearLayout>

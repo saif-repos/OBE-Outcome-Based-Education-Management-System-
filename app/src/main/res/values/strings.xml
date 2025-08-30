@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">OBE_MNGT_SYS</string>
+    <string name="icon_description">Account icon</string>
+    <string name="bottom_image_description">Decorative bottom image</string>
+    <string name="program_id_hint">Program ID</string>
+    <string name="program_name_hint">Program Name</string>
+    <string name="add_program">Add Program</string>
+    <string name="teacher_id_label">Teacher ID: %s</string>
+    <string name="clo_list_description">List of Course Learning Outcomes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="save_changes">Save Changes</string>
+    <string name="update">Update</string>
+    <string name="marks_update_success">Marks updated successfully</string>
+    <string name="marks_update_failed">Failed to update marks: %d</string>
+    <string name="error_occurred">Error: %s</string>
+    <string name="invalid_course_id">Invalid course ID</string>
+    <string name="error_loading_marks">Error loading marks data: %s</string>
+    <string name="error_loading_homework">Error loading homework data: %s</string>
+
+</resources>

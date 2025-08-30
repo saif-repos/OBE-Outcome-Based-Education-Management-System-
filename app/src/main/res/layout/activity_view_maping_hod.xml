@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view_mapping_hod"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ACTIVITIES.View_Maping_HOD">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/backIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_back"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textViewHODName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"
+            android:text="HOD Name"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- Course Name -->
+    <TextView
+        android:id="@+id/textViewCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Table Header -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <TableLayout
+            android:id="@+id/tableHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="#DDDDDD"
+            android:padding="4dp" />
+    </HorizontalScrollView>
+
+    <!-- Scrollable Table Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*"
+                android:padding="4dp" />
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <!-- Rich TextBox for Suggestion -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextSuggestion"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Suggestion"
+        android:background="@android:drawable/edit_text"
+        android:padding="10dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@color/Aqua"
+            android:text="Send"
+            android:textColor="#1A237E" />
+
+        <Button
+            android:id="@+id/buttonApproved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/Aqua"
+            android:enabled="true"
+            android:text="Approved"
+            android:textColor="#1A237E" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

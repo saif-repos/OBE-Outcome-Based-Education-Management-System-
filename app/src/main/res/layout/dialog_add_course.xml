@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Course Code Input -->
+    <EditText
+        android:id="@+id/etCourseCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Code"
+        android:minHeight="48dp" />
+
+    <!-- Course Name Input -->
+    <EditText
+        android:id="@+id/etCourseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course Name"
+        android:minHeight="48dp" />
+
+    <!-- Credit Hours Input -->
+    <EditText
+        android:id="@+id/etCreditHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Credit Hours"
+        android:inputType="number"
+        android:minHeight="48dp" />
+
+    <!-- Lab Input -->
+    <EditText
+        android:id="@+id/etLab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Lab"
+        android:minHeight="48dp" />
+
+    <!-- Prerequisite Input (Optional) -->
+    <EditText
+        android:id="@+id/etPrerequisite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prerequisite (Optional)"
+        android:minHeight="48dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Aqua"
+        android:text="Save" />
+
+    <!-- Add from Previous List Button -->
+    <Button
+        android:id="@+id/btnAddFromPrevious"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/Aqua"
+        android:layout_height="wrap_content"
+        android:text="Add from Previous List" />
+
+</LinearLayout>
